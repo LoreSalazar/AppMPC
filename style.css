@@ -1,0 +1,294 @@
+:root{
+    --FontTitles: "Playwrite GB S", cursive;
+    --FontText: "Roboto", sans-serif;
+
+    --white:  #FFFFFF;
+    --yellow: #f4d03f;
+    --beige:  #fcf3cf;
+    --blue:   #21618c;
+    --gray:   #424949;
+}
+
+/*--------------------------- Obligatorio en todos los proyectos ----------------------*/
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+/*----------------------------------------- Globales -----------------------------------*/
+
+body{
+    font-family: var(--FontText);
+    font-size: 18%;
+}
+
+.contenedor{
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1, h2, h3, h4{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-family: var(--FontTitles);
+}
+
+h1{
+    font-size: 4rem;
+}
+
+h1{
+    font-size: 3.2rem;
+}
+
+h1{
+    font-size: 2.8rem;
+}
+
+p{
+    font-size: 3rem;
+}
+
+
+a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: var(--white);
+    padding: 1rem;
+}
+
+/*-------------------------------------------- Utilidades ------------------------*/
+
+.no-margin{
+    margin: 0%;
+}
+
+.no-padding{
+    padding: 0%;
+}
+
+.centrar-texto{
+    text-align: center;
+}
+
+/*----------------------------------- Imagen de fondo ------------------------------*/
+
+.encabezado{
+    background-image: url("imagenes/logo3.jpeg");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 20%cqmax;
+    background-size: 80rem;
+    background-size: cover; /*Para que cubra todo el espacio la imagen*/
+    height: 600px;
+    position: relative; /* El padre siempre debe tener posición relativa*/
+    margin-bottom: 2rem;
+}
+
+.contenido-imagen{
+    position: absolute;
+    background-color: rgba(0,0,0, 0.6);
+    width: 100%;  /* Extiende la sombra al máximo posible */
+    height: 91%; /* Extiende la sombra al máximo posible */
+
+}
+
+/*-------------------------------------------- Enlaces ------------------------------------*/
+
+.contenido-enlaces{
+    text-align: end;
+    padding: 1.5rem 4rem;
+    margin-top: 0%;
+    background-color: rgba(0,0,0, 0.6);
+    position: static;
+}
+
+
+.inicio:hover{
+    color: var(--yellow);
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+}
+
+.contacto:hover{
+    color: var(--yellow);
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+}
+
+.galeria:hover{
+    color: var(--yellow);
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+/*-------------------------------------- Letras de fondo ----------------------------------*/
+
+.nombre-empresa{
+    color: var(--white);
+    padding: 100px; /* Agrega padding hacia arriba */
+    text-align: center;
+    font-size: 40px;
+    line-height: 2; /*Interlineado*/
+}
+
+@media(min-width: 768px){
+    .nombre-empresa{
+        color: var(--white);
+        text-align: center;
+        padding: 150px; /* Agrega padding hacia arriba */
+        font-size: 45px;
+    }
+}
+
+/*------------------------------------------ Texto ---------------------------------------*/
+.contactanos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color:  #2980b9;
+    margin-bottom: 0%;
+    text-align: center;
+    line-height: 2; /*Interlineado*/
+}
+
+.telefono{
+    font-size: 18px;
+}
+
+.email{
+    font-size: 18px;
+}
+
+.horario{
+    font-size: 18px; 
+}
+
+@media(min-width: 768px){
+    .telefono{
+        font-size: 24px;
+    }
+    
+    .email{
+        font-size: 24px;
+    }
+    
+    .horario{
+        font-size: 24px;
+    }
+}
+
+/*------------------------------------------ Logotipo ---------------------------------------*/
+
+.logotipo{
+    font-family: var(--FontTitles); 
+    text-align: center;
+    color: #424949;
+    font-weight: bold;
+}
+
+/*------------------------------------------ Footer -----------------------------------------*/
+
+.footer{
+    background-color: #1a5276;
+    text-align: center;
+    line-height: 2; /*Interlineado*/
+}
+
+.footer-texto{
+    margin-top: 0%;
+    font-size: 11px;
+}
+
+@media(min-width: 768px){
+    .footer-texto{
+        font-size: 16px;
+    }
+}
+
+
+/******************************************* CONTACTO ***************************************/
+
+.titulo-contactanos{
+    text-shadow: 3px 3px 2px var(--gray);
+    text-align: center;
+    font-size: 42px;
+    font-family: var(--FontTitles);
+}
+
+.imagen-facebook{
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+    align-items: center;
+    gap: 2rem;
+}
+
+@media(min-width: 768px){
+    .imagen-facebook{
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    #a1{
+        color: black;
+        font-size: 90px;
+    }
+}
+
+#a1{
+    color: black;
+    font-size: 22px;
+}
+
+.a1:hover{
+    cursor:pointer;
+}
+
+.imagen-whatsapp{
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+    align-items: center;
+    gap: 2rem;
+    margin-left: 4%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+
+@media(min-width: 768px){
+    .imagen-whatsapp{
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+        align-items: center;
+        gap: 2rem;
+        margin-left: 4%;
+    }
+}
+
+.imagen-whatsapp:hover{
+    cursor:pointer;
+}
+
+
