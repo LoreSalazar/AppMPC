@@ -169,15 +169,15 @@ a{
 }
 
 .telefono{
-    font-size: 18px;
+    font-size: 13px;
 }
 
 .email{
-    font-size: 18px;
+    font-size: 13px;
 }
 
 .horario{
-    font-size: 18px; 
+    font-size: 13px; 
 }
 
 @media(min-width: 768px){
@@ -228,8 +228,17 @@ a{
 .titulo-contactanos{
     text-shadow: 3px 3px 2px var(--gray);
     text-align: center;
-    font-size: 42px;
+    font-size: 30px;
     font-family: var(--FontTitles);
+}
+
+@media(min-width: 768px){
+    .titulo-contactanos{
+        text-shadow: 3px 3px 2px var(--gray);
+        text-align: center;
+        font-size: 42px;
+        font-family: var(--FontTitles);
+    }
 }
 
 .imagen-facebook{
@@ -251,7 +260,6 @@ a{
 
     #a1{
         color: black;
-        font-size: 90px;
     }
 }
 
